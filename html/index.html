@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script
+      src="https://kit.fontawesome.com/29173512c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/javascript/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Todo App</h1>
+      <div class="controls">
+        <button class="new-task" onclick="addTask()">
+          <i class="fas fa-plus"></i> New
+        </button>
+        <div class="filters">
+          <button onclick="setFilter('all')" class="filter all">All</button>
+          <button onclick="setFilter('pending')" class="filter pending">
+            Pending
+          </button>
+          <button onclick="setFilter('completed')" class="filter completed">
+            Completed
+          </button>
+        </div>
+      </div>
+      <div class="task-list" id="taskList"></div>
+      <p id="noTasksMessage" class="no-tasks-message" style="display: none">
+        No todo Found
+      </p>
+    </div>
+  </body>
+</html>
